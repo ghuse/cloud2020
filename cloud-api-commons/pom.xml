@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-api-common</artifactId>
+    <artifactId>cloud-api-commons</artifactId>
     <description>公共模块</description>
 
     <dependencies>
