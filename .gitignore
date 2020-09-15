@@ -1,33 +1,44 @@
-*.class
+######################################################################
+# Build Tools
 
-#package file
-*.war
-*.ear
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-#kdiff3 ingnore
-*.orig
+target/
+!.mvn/wrapper/maven-wrapper.jar
 
-#maven ignore
-taget/
+######################################################################
+# IDE
 
-#eclipse ignore
-.settings/
-.project
+### STS ###
+.apt_generated
 .classpath
+.factorypath
+.project
+.settings
+.springBeans
 
-#idea
-.idea/
-/idea/
-*.ipr
-*.iml
+### IntelliJ IDEA ###
+.idea
 *.iws
+*.iml
+*.ipr
 
-# temp file
+### NetBeans ###
+nbproject/private/
+build/*
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+######################################################################
+# Others
 *.log
-*.cache
-*.diff
-*.tmp
-
-#system
+*.log.*
+*.xml.versionsBackup
 .DS_Store
-Thumbs.db
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml
