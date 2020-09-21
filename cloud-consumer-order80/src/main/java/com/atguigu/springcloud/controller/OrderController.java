@@ -14,7 +14,10 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    // 支付服务配置为集群后，订单服务访问地址不能写死
+    //public static final String PAYMENT_URL = "http://localhost:8001";
+    // 通过在eureka上注册过的微服务名称调用
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
